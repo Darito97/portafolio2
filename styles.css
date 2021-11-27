@@ -83,6 +83,7 @@ nav p {
 }
 #Proyectos{
   padding-top: 43px;
+  padding-bottom: 20px;
 }
 
 #Proyectos > h2{
@@ -124,6 +125,8 @@ nav p {
   background-color: var(--color-principal);
   border-radius: 16px;
   color: white;
+  font-size: 16px;
+  font-weight: 600;
   height: 30px;
   text-decoration: none;
   width: 220px;
@@ -156,4 +159,224 @@ nav p {
   font-size: 18px;
   text-align: center;
   margin: 15px 20px 10px 20px;
+}
+#otrosProyectos{
+  padding: var(--padding-normal);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+.otroProyecto{
+  border: 1px solid var(--color-principal);
+  border-radius: 16px;
+  box-sizing: border-box;
+  padding: 10px;
+  min-width: 240px;
+  width: 240px;
+}
+.otroProyecto img{
+  background-color: var(--color-principal);
+  border-radius: 16px;
+  height: 110px;
+  object-fit: cover;
+  width: 100%;
+}
+.otroProyecto h4{
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+.otroProyecto p{
+  color: #585F6E;
+  font-size: 12px;
+  height: 100px;
+  margin: 0;
+}
+.botonesDeOtroProyecto{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.botonesDeOtroProyecto a{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+}
+.botonesDeOtroProyecto a:first-child{
+  border: 2px solid var(--color-principal);
+  border-radius: 16px;
+  color: var(--color-principal);
+  font-size: 14px;
+  font-weight: 600;
+  width: 180px;
+}
+.botonesDeOtroProyecto a:last-child{
+  background-color: var(--color-principal);
+  border-radius: 15px;
+  box-sizing: border-box;
+  padding: 3px;
+}
+#sobreMi{
+  background-color:rgba(32, 34, 39, 0.05);
+  text-align: center;
+  padding-bottom: 120px;
+}
+#sobreMi h3{
+  font-size: 26px;
+  font-style: italic;
+  font-weight: 300;
+  padding: var(--padding-normal);
+}
+.informacionSobreMi img{
+  border-radius: 16px;
+  box-sizing: border-box;
+  object-fit: cover;
+  height: 220px;
+  width: 220px;
+}
+.informacionSobreMi p{
+  text-align: start;
+  margin: 0;
+  padding: var(--padding-normal);
+}
+#redesSociales{
+  box-sizing: border-box;
+  list-style-type: none;
+  padding: 20px;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+@media only screen and (min-width: 800px) {
+  :root{
+    --padding-normal: 60px;
+  }
+  nav{
+    background-color: var(--color-principal);
+    box-sizing: border-box;
+    padding: 20px var(--padding-normal);
+    top:0;
+    bottom: initial;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  #tituloDelNav{
+    display: block;
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0;
+    margin-right: auto;
+  }
+  #tituloDelNav a {
+    color: white;
+    font-weight: 700;
+  }
+  #menu{
+    padding: 0;
+    max-width: 460px;
+    justify-content: flex-end;
+    gap: 30px;
+  }
+  .OpcionDeMenu a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    font-size: 16px;
+  }
+  .OpcionDeMenu a svg{
+    width: 20px;
+    height: 20px;
+    fill: white;
+  }
+  #Inicio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 200px var(--padding-normal);
+  }
+  .textoDePresentacion{
+    text-align: start;
+    padding-bottom: 0;
+  }
+  .textoDePresentacion p{
+    font-size: 26px;
+    margin: 0;
+  }
+  .textoDePresentacion h1{
+    font-size: 34px;
+    margin: 2px;
+  }
+  .fotoDePresentacion{
+    height: 340px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #Proyectos h2{
+    font-size: 26px;
+  }
+  #contenidoDeProyectoPrincipal > h3{
+    font-size: 30px;
+  }
+  #contenidoDeProyectoPrincipal > p{
+    font-size: 18px;
+  }
+  #botonesDeProyectoPrincipal > a:first-child{
+    height: 40px;
+  }
+  #botonesDeProyectoPrincipal > a:nth-child(2){
+    background-color: transparent;
+    border: 2px solid var(--color-principal);
+    height: 40px;
+    text-decoration: none;
+    width: 220px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  #botonesDeProyectoPrincipal > a:nth-child(2) svg path{
+    fill: #2a2d34;
+  }
+  #botonesDeProyectoPrincipal > a:nth-child(2) span{
+    color: var(--color-principal);
+    display: initial;
+  }
+  #otrosProyectos{
+    overflow-x: auto;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #sobreMi h3{
+    font-size: 34px;
+    padding-bottom: 0;
+  }
+  .informacionSobreMi{
+    padding: 20px var(--padding-normal);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .informacionSobreMi img{
+    height: 240px;
+    width: auto;
+  }
+  .informacionSobreMi p{
+    font-size: 18px;
+  }
 }
